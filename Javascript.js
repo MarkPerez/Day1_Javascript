@@ -4,16 +4,11 @@ event1.addEventListener('click',myfirst,false);
 
 function myfirst() {
 var userinput1 = parseInt(document.getElementById("input1").value);
+var userinput2 = parseInt(document.getElementById("input2").value);
+var userinput3 = parseInt(document.getElementById("input3").value);
 
-document.getElementById("demo").innerHTML = userinput1 + 1;     
+document.getElementById("demo").innerHTML = ((userinput1+userinput2)*userinput3)-(userinput1+userinput2+userinput3);     
     }
 
-var event2 = document.getElementById("button2");
-event2.addEventListener('click',mysecond,false);
 
-function mysecond() {
-var userinput1 = parseInt(document.getElementById("input1").value); 
-
-document.getElementById("demo").innerHTML = userinput1 - 1;     
-    }
 
