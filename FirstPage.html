@@ -4,9 +4,7 @@
     
 <head>
         
-<script>
-    window.alert("Hello World!");        
-</script>
+
         
     
 </head>
@@ -15,9 +13,17 @@
     
 <body>
         
- <h1>JavaScript - Hello World</h1>       
+ <span id="demo"></span>       
         
-        
+<script>
+    window.addEventListener('load',myfirst,false);
+    
+    function myfirst(){
+        window.alert("Hello World using an Event Listener");
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+    
+</script>       
         
         
 </body>
