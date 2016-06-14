@@ -4,19 +4,17 @@ event1.addEventListener('click',myfirst,false);
 
 function myfirst() {
 var userinput1 = parseInt(document.getElementById("input1").value);
+var userinput2 = parseInt(document.getElementById("input2").value);
 
-if (userinput1 < 0){
-     document.getElementById("demo").innerHTML = "the number is negative";
-    }
-else if (userinput1 < 10){
-    document.getElementById("demo").innerHTML = "the number is less than 10";
+if (userinput1 > 10 && userinput2 > 10){
+    document.getElementById("demo").innerHTML = "both numbers are greater than 10";
 }
-    else if (userinput1 > 10){
-    document.getElementById("demo").innerHTML = "the number is greater than 10";
+    else if (userinput1 > 10 || userinput2 > 10){
+    document.getElementById("demo").innerHTML = "at least one number is greater than 10";
 
 }
 else{
-    document.getElementById("demo").innerHTML = "the number is 10";
+    document.getElementById("demo").innerHTML = "neither number is greater than 10";
   
 }
     }
