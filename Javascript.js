@@ -4,10 +4,21 @@ event1.addEventListener('click',myfirst,false);
 
 function myfirst() {
 var userinput1 = parseInt(document.getElementById("input1").value);
-var userinput2 = parseInt(document.getElementById("input2").value);
-var userinput3 = parseInt(document.getElementById("input3").value);
 
-document.getElementById("demo").innerHTML = ((userinput1+userinput2)*userinput3)-(userinput1+userinput2+userinput3);     
+if (userinput1 < 0){
+     document.getElementById("demo").innerHTML = "the number is negative";
+    }
+else if (userinput1 < 10){
+    document.getElementById("demo").innerHTML = "the number is less than 10";
+}
+    else if (userinput1 > 10){
+    document.getElementById("demo").innerHTML = "the number is greater than 10";
+
+}
+else{
+    document.getElementById("demo").innerHTML = "the number is 10";
+  
+}
     }
 
 
